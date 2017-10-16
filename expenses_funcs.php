@@ -57,5 +57,7 @@ function addExpense($description, $amount, $applied_on)
 
 function getConn()
 {
-    return new \PDO('mysql:dbname=frogos_simon_p1;', ' ', ' ');
+    list($db, $username, $password) = explode(' ', trim(file_get_contents('../config.txt')));
+
+    return new \PDO('mysql:dbname=' . $db . ';', $username, $password);
 }
