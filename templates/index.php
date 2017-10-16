@@ -4,7 +4,11 @@
         <meta charset="utf-8">
         <title>Expenses</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <style>
+            body > div:not(.container) {
+                display:none;
+            }
+        </style
     </head>
     <body>
         <div class="container">
